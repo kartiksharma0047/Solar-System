@@ -4,7 +4,7 @@ A visually interactive **3D Solar System simulation** built using Three.js.
 This project demonstrates real-time rendering, planetary motion, and basic orbital mechanics in a browser environment.
 
 🔗 **Live Demo:**  
-https://solar-system-8qsgj70jf-kartiksharma0047s-projects.vercel.app/
+[https://solar-system-8qsgj70jf-kartiksharma0047s-projects.vercel.app/](https://solar-system-puce-kappa.vercel.app/)
 
 ---
 
