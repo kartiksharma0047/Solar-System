@@ -1,0 +1,129 @@
+{
+  "name": "Solar System",
+  "configs": [
+    {
+      "type": "Star",
+      "name": "Sun",
+      "radius": 25,
+      "width_Segment": 32,
+      "height_Segment": 32,
+      "Load_Img": "Sun",
+      "rotateY": 0.0005
+    },
+    {
+      "type": "Planet",
+      "name": "Mercury",
+      "radius": 2,
+      "width_Segment": 30,
+      "height_Segment": 30,
+      "Load_Img": "Mercury",
+      "rotateY": 0.01,
+      "revolutionSpeed": 0.04,
+      "initialAngle": 0.0,
+      "orbit": { "a": 40, "b": 34 }
+    },
+    {
+      "type": "Planet",
+      "name": "Venus",
+      "radius": 4,
+      "width_Segment": 30,
+      "height_Segment": 30,
+      "Load_Img": "Venus",
+      "rotateY": 0.008,
+      "revolutionSpeed": 0.015,
+      "initialAngle": 1.2,
+      "orbit": { "a": 55, "b": 54 }
+    },
+    {
+      "type": "Planet",
+      "name": "Earth",
+      "radius": 4.5,
+      "width_Segment": 30,
+      "height_Segment": 30,
+      "Load_Img": "Earth",
+      "rotateY": 0.03,
+      "revolutionSpeed": 0.01,
+      "initialAngle": 2.4,
+      "orbit": { "a": 70, "b": 69 }
+    },
+    {
+      "type": "Planet",
+      "name": "Mars",
+      "radius": 3,
+      "width_Segment": 30,
+      "height_Segment": 30,
+      "Load_Img": "Mars",
+      "rotateY": 0.02,
+      "revolutionSpeed": 0.008,
+      "initialAngle": 3.1,
+      "orbit": { "a": 85, "b": 82 }
+    },
+    {
+      "type": "Planet",
+      "name": "Jupiter",
+      "radius": 12,
+      "width_Segment": 32,
+      "height_Segment": 32,
+      "Load_Img": "Jupiter",
+      "rotateY": 0.06,
+      "revolutionSpeed": 0.002,
+      "initialAngle": 4.0,
+      "orbit": { "a": 110, "b": 108 }
+    },
+    {
+      "type": "Planet",
+      "name": "Saturn",
+      "radius": 10,
+      "width_Segment": 32,
+      "height_Segment": 32,
+      "Load_Img": "Saturn",
+      "rotateY": 0.05,
+      "revolutionSpeed": 0.0009,
+      "initialAngle": 5.0,
+      "orbit": { "a": 140, "b": 138 },
+      "ring_Config": {
+        "inner_radius": 10,
+        "outer_radius": 20,
+        "theta_Segment": 32,
+        "Load_Img": "SaturnRing",
+        "Side": "DoubleSide"
+      }
+    },
+    {
+      "type": "Planet",
+      "name": "Uranus",
+      "radius": 7,
+      "width_Segment": 30,
+      "height_Segment": 30,
+      "Load_Img": "Uranus",
+      "rotateY": 0.03,
+      "revolutionSpeed": 0.0004,
+      "initialAngle": 2.0,
+      "orbit": { "a": 170, "b": 168 }
+    },
+    {
+      "type": "Planet",
+      "name": "Neptune",
+      "radius": 7,
+      "width_Segment": 30,
+      "height_Segment": 30,
+      "Load_Img": "Neptune",
+      "rotateY": 0.028,
+      "revolutionSpeed": 0.0002,
+      "initialAngle": 4.8,
+      "orbit": { "a": 200, "b": 198 }
+    },
+    {
+      "type": "Planet",
+      "name": "Pluto",
+      "radius": 1.5,
+      "width_Segment": 20,
+      "height_Segment": 20,
+      "Load_Img": "Pluto",
+      "rotateY": 0.008,
+      "revolutionSpeed": 0.0001,
+      "initialAngle": 1.5,
+      "orbit": { "a": 230, "b": 210 }
+    }
+  ]
+}
