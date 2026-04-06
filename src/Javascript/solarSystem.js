@@ -1,18 +1,18 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/Addons.js";
 import config from "./config.json";
-import Stars from "url:../assets/Stars.jpg";
-import Sun from "url:../assets/Sun.avif";
-import Mercury from "url:../assets/Mercury.avif";
-import Venus from "url:../assets/Venus.png";
-import Mars from "url:../assets/Mars.avif";
-import Earth from "url:../assets/Earth.jpg";
-import Jupiter from "url:../assets/Jupiter.avif";
-import Saturn from "url:../assets/Saturn.jpeg";
-import SaturnRing from "url:../assets/Saturn_Ring.jpg";
-import Uranus from "url:../assets/Uranus.avif";
-import Neptune from "url:../assets/Neptune.avif";
-import Pluto from "url:../assets/Pluto.jpg";
+import Stars from "url:../assets/Stars.webp";
+import Sun from "url:../assets/Sun.webp";
+import Mercury from "url:../assets/Mercury.webp";
+import Venus from "url:../assets/Venus.webp";
+import Mars from "url:../assets/Mars.webp";
+import Earth from "url:../assets/Earth.webp";
+import Jupiter from "url:../assets/Jupiter.webp";
+import Saturn from "url:../assets/Saturn.webp";
+import SaturnRing from "url:../assets/Saturn_Ring.webp";
+import Uranus from "url:../assets/Uranus.webp";
+import Neptune from "url:../assets/Neptune.webp";
+import Pluto from "url:../assets/Pluto.webp";
 
 const textureMap = {
   Sun,
