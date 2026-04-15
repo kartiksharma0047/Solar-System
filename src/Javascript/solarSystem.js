@@ -13,6 +13,7 @@ import SaturnRing from "url:../assets/Saturn_Ring.webp";
 import Uranus from "url:../assets/Uranus.webp";
 import Neptune from "url:../assets/Neptune.webp";
 import Pluto from "url:../assets/Pluto.webp";
+import * as dat from "dat.gui";
 
 const textureMap = {
   Sun,
@@ -65,7 +66,22 @@ const textureLoader = new THREE.TextureLoader();
 
 // Solor System Dynamic Logic
 const objects = [];
+const orbitLines = [];
 let sun = null;
+
+// GUI
+const gui = new dat.GUI();
+const options = {
+  Orbital_Lines: true,
+  OrbitSpeed: 1,
+};
+
+gui.add(options, "Orbital_Lines").onChange((value) => {
+  orbitLines.forEach(line => {
+    line.visible = value;
+  });
+});
+gui.add(options, "OrbitSpeed", 0.25, 5, 0.25);
 
 config.configs.map((item) => {
   const geometry = new THREE.SphereGeometry(
@@ -100,7 +116,6 @@ config.configs.map((item) => {
     }
 
     scene.add(mesh);
-    angle: item.initialAngle || 0
 
     const a = item.orbit?.a || item.Distance_from_star;
     const b = item.orbit?.b || item.Distance_from_star;
@@ -124,8 +139,9 @@ config.configs.map((item) => {
       opacity: 0.4,
     });
 
-    const orbit = new THREE.Line(orbitGeometry, orbitMaterial);
-    scene.add(orbit);
+    const orbitLine = new THREE.Line(orbitGeometry, orbitMaterial);
+    scene.add(orbitLine);
+    orbitLines.push(orbitLine);
 
     if (item.ring_Config) {
       const ringData = item.ring_Config;
@@ -173,7 +189,7 @@ function animate() {
     obj.mesh.rotateY(obj.rotationSpeed);
 
     if (obj.orbit) {
-      obj.angle += obj.revolutionSpeed;
+      obj.angle += obj.revolutionSpeed * options.OrbitSpeed;
 
       const a = obj.orbit.a;
       const b = obj.orbit.b;
